@@ -64,5 +64,5 @@ RUN x86_64-w64-mingw32-strip --strip-unneeded build64/*.dll
 
 FROM scratch AS artifacts
 
-COPY --from=build32 /src/build32/*.dll /out/x86/
-COPY --from=build64 /src/build64/*.dll /out/x64/
+COPY --from=build32 /src/build32/*.dll /x86/
+COPY --from=build64 /src/build64/*.dll /x64/
