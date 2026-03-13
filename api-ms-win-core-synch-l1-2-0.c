@@ -1,4 +1,4 @@
-#include <Windows.h>
+#include <windows.h>
 #include <string.h>
 
 typedef struct _ADDR_CVAR_ASSOC {
